@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataTypesDesign class="oracle.dbtools.crest.model.design.datatypes.DataTypesDesign" name="DataTypes" id="8B102B19-7BD6-030F-0DA7-54362C46A516" mainViewID="AF707249-4171-3CDC-C029-EC608D2F07C4">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<collectionOfRefsPrefix>array_ref_</collectionOfRefsPrefix>
+<collectionPrefix>array_</collectionPrefix>
+<defaultArrayLimit>10</defaultArrayLimit>
+<defaultCollectionType_Kind>ARRAY</defaultCollectionType_Kind>
+<defaultCollectionType_Suffix>_Array</defaultCollectionType_Suffix>
+<embeddedStructuredTypePrefix>inst_</embeddedStructuredTypePrefix>
+<referencePrefix>ref_</referencePrefix>
+<useRoleInAssociationEndAsName>true</useRoleInAssociationEndAsName>
+<StructuredTypes>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="SDO_GEOMETRY" directorySegmentName="seg_0" id="47E390DE-0671-C4B1-8428-0F45CBEE18F8">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<visible>false</visible>
+<predefined>true</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+</StructuredType>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="XMLTYPE" directorySegmentName="seg_0" id="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<visible>false</visible>
+<predefined>true</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+</StructuredType>
+</StructuredTypes>
+<mainView class="oracle.dbtools.crest.swingui.datatypes.DPVDataTypes" id="AF707249-4171-3CDC-C029-EC608D2F07C4">
+<createdBy>sbravo</createdBy>
+<modifiedBy>sbravo</modifiedBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="47E390DE-0671-C4B1-8428-0F45CBEE18F8" otype="StructuredType" vid="66005EB1-72ED-A37A-161D-BEB529945B92">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" otype="StructuredType" vid="B090330C-C958-9B09-8C8C-AC7008A7A8CC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+</objectViews>
+</mainView>
+</DataTypesDesign>

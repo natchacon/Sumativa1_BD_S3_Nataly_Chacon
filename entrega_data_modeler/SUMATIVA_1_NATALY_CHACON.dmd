@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SUMATIVA_1_NATALY_CHACON" id="0D4F9E7D-56EF-FE35-F49A-79753D0C164B" version="3.5">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<modelPersistence>2</modelPersistence>
+<capitalNames>false</capitalNames>
+<designId>0D4F9E7D-56EF-FE35-F49A-79753D0C164B</designId>
+</OSDM_Design>

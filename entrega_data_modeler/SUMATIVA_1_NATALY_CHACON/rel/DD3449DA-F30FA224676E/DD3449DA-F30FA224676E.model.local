@@ -1,0 +1,540 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="DD3449DA-EE95-DFC0-6458-F30FA224676E" mainViewID="F5B19A01-CB5C-5DA5-F453-E9053ED1FCB1">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 16:59:58 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<Tables>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="570675D2-7E60-753A-CE3E-2B265C0E149B" name="ARBOL">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>BAC0F5E6-F264-35E9-73CE-93F1A5F0B7D9</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ARBOL" id="583CA236-74DE-648D-96E0-ADDCEF838A0D">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>17556517-E6D3-EF2F-59ED-7E0BC9D04CF9</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGNO_PLANTADO" id="CFEDA552-4ABF-5223-F2EA-ABE03E112A7D">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>B82D21F8-4976-47B1-83E9-9C2C0EFCC572</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<domain>321D0E08-0FBE-AA29-A097-F66178FEB4C5</domain>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1900</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="AGNO_MUERTE" id="48BD6360-5F7D-0584-512E-25D2A8E45BF5">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>26A644C7-A2A4-804A-E4DE-D78FBE2B46FA</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<domain>321D0E08-0FBE-AA29-A097-F66178FEB4C5</domain>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1900</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="HUERTO_ID_HUERTO" id="1AFA90A6-D761-860F-577B-837DEE41209C">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>3B4C5628-2BCF-82CF-11F7-E318B7B907D2</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD048AA1-3765-EFD2-FEDE-46B76EB3424B" referredColumn="342F80EE-9409-59EC-318E-1A02FE8ADA5E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54474C86-45BE-6869-B050-F9ACDE083E14" name="ARBOL_PK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>172402F2-D597-6342-F14E-B24FF803309B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="583CA236-74DE-648D-96E0-ADDCEF838A0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61475049-1520-48FD-FAB7-DED8ECBC8BF7" name="ARBOL_HUERTO_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>C70E69B4-CC70-2F53-03E7-7755F3CBB76B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AFA90A6-D761-860F-577B-837DEE41209C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD6813EA-3427-68C3-6B15-8F83D688996A" name="ARBOL_VARIEDAD">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARBOL_ID_ARBOL" id="EDBE2003-8266-F077-C9B0-64BCFE235185">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E8AF24E-2BA5-F364-007C-F32F073CEFE6" referredColumn="583CA236-74DE-648D-96E0-ADDCEF838A0D"/>
+</associations>
+</Column>
+<Column name="VARIEDAD_ARBOL_ID_VARIEDAD_ARBOL" id="DCC80A90-38E1-1BA1-A709-F0F7FC2D21A7">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9741409-2F71-188A-520C-94F2072F8256" referredColumn="3472103C-D518-16AC-3E87-A6BA39D055FE"/>
+</associations>
+</Column>
+<Column name="ES_INJERTO" id="4451B038-BB63-03E0-A3D3-6B5E80A4C557">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>90ECC744-BED4-7AD9-2F54-DD3E46C1D977</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7EF479B-4651-73D6-FFCC-9CCF13311D5D" name="Relation_ARBOL_VARIEDAD_PK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDBE2003-8266-F077-C9B0-64BCFE235185"/>
+<colUsage columnID="DCC80A90-38E1-1BA1-A709-F0F7FC2D21A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0286560A-AEF5-5A78-4801-27E560FFBBFF" name="Relation_ARBOL_VARIEDAD_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>D0922D42-0560-96EC-8418-332FBB211665</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDBE2003-8266-F077-C9B0-64BCFE235185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7D05A33-8B13-975F-EB51-23392A10F94A" name="Relation_ARBOL_VARIEDAD_VARIEDAD_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>D0922D42-0560-96EC-8418-332FBB211665</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCC80A90-38E1-1BA1-A709-F0F7FC2D21A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0903537-21EA-7DA1-20EF-173BEE8300E2" name="ESPECIE_ARBOL">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>B088E40C-BE25-DC18-7733-819DCB57739D</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESPECIE_ARBOL" id="B0550F56-9BEE-7163-A840-05727F876A7F">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>929AC4D9-206F-D797-38AA-2FC02FAFE85E</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_ESPECIE" id="E6E0CC8B-25BC-E934-0476-EA6153F4041C">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>8DF88EEF-37D7-42B5-4DB1-D93CD1AF495A</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="423564BE-98A7-363A-1305-3F081D005FD8" name="ESPECIE_ARBOL_PK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>67F236BF-1E7C-A60D-5C11-A8D18ABCFB61</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0550F56-9BEE-7163-A840-05727F876A7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3461F5E1-B944-CF67-6A3E-371B0181089D" name="HUERTO">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>00150CA9-DA63-F24F-BDF9-15DC9AD1EAA5</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HUERTO" id="342F80EE-9409-59EC-318E-1A02FE8ADA5E">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:17 UTC</createdTime>
+<generatorID>2762A689-8F81-DE1F-41F9-EB90B9AC08C0</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_HUERTO" id="9BF51D4E-831F-EBDE-0720-83B8EE3A1343">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>B90058D5-EA75-B58E-0123-96858D846C4B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA_GEOGRAFICA_HUERTO" id="452181AD-5F63-D311-D483-847619170ABC">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>CAFA3069-0445-D084-3B6C-0C51065E2150</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>232A0E6D-B508-B304-BF64-8146846D6EE9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_HECTAREAS" id="879057C8-A882-C92D-36E4-F930D654B6D1">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>8C0E5B27-5F71-3FDF-7658-2BD637BBF28E</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5AD12C3F-9F0A-6F0A-7DF5-F2B7297070FF" name="HUERTO_PK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>AC36C7B4-E2CB-7705-73EE-D09E19FB9636</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="342F80EE-9409-59EC-318E-1A02FE8ADA5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C0AA517-1F2C-DB82-B9E6-78352AC05E24" name="VARIEDAD_ARBOL">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>A2A34A27-0F4F-0C8B-C40F-917378139614</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VARIEDAD_ARBOL" id="3472103C-D518-16AC-3E87-A6BA39D055FE">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>7343AC24-9EFC-479A-C0AD-85DB17EE2ACC</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_VARIEDAD_ARBOL" id="A98778F0-A912-6BE5-E148-ADA748BB981C">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>621316DF-A7C5-ADB8-2A99-EADA4979D692</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIE_ARBOL_ID_ESPECIE_ARBOL" id="E17503C3-5168-3139-CC75-453D1ECCFC11">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>DE806181-AA3D-C8C3-4DC8-F72D22A772DD</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12AADB43-3DF9-9507-87EF-1841A0D4F7A9" referredColumn="B0550F56-9BEE-7163-A840-05727F876A7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="909AC964-C1F0-EFC7-71F4-13446FEBC281" name="VARIEDAD_ARBOL_PK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>C5F8515F-C8F7-B94F-519E-F0E322C2D101</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3472103C-D518-16AC-3E87-A6BA39D055FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C802ECA2-5E8D-56C9-C7E1-CF924740003F" name="VARIEDAD_ARBOL_ESPECIE_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>A49757E4-D56B-7D67-FFD1-A9292D0E4B8B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E17503C3-5168-3139-CC75-453D1ECCFC11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+</Tables>
+<ForeignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD048AA1-3765-EFD2-FEDE-46B76EB3424B" containerWithKeyObject="570675D2-7E60-753A-CE3E-2B265C0E149B" localFKIndex="61475049-1520-48FD-FAB7-DED8ECBC8BF7" name="ARBOL_HUERTO_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>C70E69B4-CC70-2F53-03E7-7755F3CBB76B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<referredTableLongName>HUERTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3461F5E1-B944-CF67-6A3E-371B0181089D</referredTableID>
+<keyObject>5AD12C3F-9F0A-6F0A-7DF5-F2B7297070FF</keyObject>
+<referredKeyID>5AD12C3F-9F0A-6F0A-7DF5-F2B7297070FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_HUERTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8E8AF24E-2BA5-F364-007C-F32F073CEFE6" containerWithKeyObject="BD6813EA-3427-68C3-6B15-8F83D688996A" localFKIndex="0286560A-AEF5-5A78-4801-27E560FFBBFF" name="Relation_ARBOL_VARIEDAD_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>D0922D42-0560-96EC-8418-332FBB211665</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<referredTableLongName>ARBOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>570675D2-7E60-753A-CE3E-2B265C0E149B</referredTableID>
+<keyObject>54474C86-45BE-6869-B050-F9ACDE083E14</keyObject>
+<referredKeyID>54474C86-45BE-6869-B050-F9ACDE083E14</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ARBOL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B9741409-2F71-188A-520C-94F2072F8256" containerWithKeyObject="BD6813EA-3427-68C3-6B15-8F83D688996A" localFKIndex="F7D05A33-8B13-975F-EB51-23392A10F94A" name="Relation_ARBOL_VARIEDAD_VARIEDAD_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>D0922D42-0560-96EC-8418-332FBB211665</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<referredTableLongName>VARIEDAD_ARBOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C0AA517-1F2C-DB82-B9E6-78352AC05E24</referredTableID>
+<keyObject>909AC964-C1F0-EFC7-71F4-13446FEBC281</keyObject>
+<referredKeyID>909AC964-C1F0-EFC7-71F4-13446FEBC281</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_VARIEDAD_ARBOL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="12AADB43-3DF9-9507-87EF-1841A0D4F7A9" containerWithKeyObject="7C0AA517-1F2C-DB82-B9E6-78352AC05E24" localFKIndex="C802ECA2-5E8D-56C9-C7E1-CF924740003F" name="VARIEDAD_ARBOL_ESPECIE_ARBOL_FK">
+<createdBy>sbravo</createdBy>
+<createdTime>2024-08-23 17:52:18 UTC</createdTime>
+<generatorID>A49757E4-D56B-7D67-FFD1-A9292D0E4B8B</generatorID>
+<ownerDesignName>SUMATIVA_1_NATALY_CHACON</ownerDesignName>
+<referredTableLongName>ESPECIE_ARBOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E0903537-21EA-7DA1-20EF-173BEE8300E2</referredTableID>
+<keyObject>423564BE-98A7-363A-1305-3F081D005FD8</keyObject>
+<referredKeyID>423564BE-98A7-363A-1305-3F081D005FD8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESPECIE_ARBOL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+</ForeignKeys>
+<mainView class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="F5B19A01-CB5C-5DA5-F453-E9053ED1FCB1">
+<createdBy>sbravo</createdBy>
+<modifiedBy>sbravo</modifiedBy>
+<createdTime>2024-08-23 17:01:07 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3461F5E1-B944-CF67-6A3E-371B0181089D" otype="Table" vid="57B6E613-2930-7F74-7E90-20CFEC834493">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="748" y="23" width="303" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="570675D2-7E60-753A-CE3E-2B265C0E149B" otype="Table" vid="D42B8959-08DD-7377-CEE0-E996A20357BC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="96" y="29" width="509" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7C0AA517-1F2C-DB82-B9E6-78352AC05E24" otype="Table" vid="A26436A2-D0D0-CDC8-6C07-AD234F8259A2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="87" y="394" width="513" height="87"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BD6813EA-3427-68C3-6B15-8F83D688996A" otype="Table" vid="A4C98793-165C-BCFC-4959-EA594FD0105A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="94" y="211" width="507" height="147"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E0903537-21EA-7DA1-20EF-173BEE8300E2" otype="Table" vid="DAC49380-6E46-1EB6-D53F-FD58D83589E9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="746" y="384" width="303" height="75"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="12AADB43-3DF9-9507-87EF-1841A0D4F7A9" otype="FKIndexAssociation" vid_source="DAC49380-6E46-1EB6-D53F-FD58D83589E9" vid_target="A26436A2-D0D0-CDC8-6C07-AD234F8259A2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="746" y="426"/>
+<point x="600" y="426"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8E8AF24E-2BA5-F364-007C-F32F073CEFE6" otype="FKIndexAssociation" vid_source="D42B8959-08DD-7377-CEE0-E996A20357BC" vid_target="A4C98793-165C-BCFC-4959-EA594FD0105A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="348" y="161"/>
+<point x="348" y="211"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B9741409-2F71-188A-520C-94F2072F8256" otype="FKIndexAssociation" vid_source="A26436A2-D0D0-CDC8-6C07-AD234F8259A2" vid_target="A4C98793-165C-BCFC-4959-EA594FD0105A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="347" y="394"/>
+<point x="347" y="358"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DD048AA1-3765-EFD2-FEDE-46B76EB3424B" otype="FKIndexAssociation" vid_source="57B6E613-2930-7F74-7E90-20CFEC834493" vid_target="D42B8959-08DD-7377-CEE0-E996A20357BC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="748" y="81"/>
+<point x="605" y="81"/>
+</points>
+</Connector>
+</connectors>
+</mainView>
+</relationalModel>
